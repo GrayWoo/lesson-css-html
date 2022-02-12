@@ -141,7 +141,7 @@ hr {
     line-height: 32px;
     font-weight: 400;
     letter-spacing: 0.025em;
-    color: #ffffff;
+    color: $bg;
     background-color: $pink;
     border: 1px solid $pink;
     box-sizing: border-box;
@@ -244,7 +244,7 @@ hr {
     font-size: 30px;
     font-weight: 700;
     letter-spacing: 0.025em;
-    color: #222222;
+    color: $f1;
     text-align: center;
   }
   &__p {
@@ -264,7 +264,7 @@ hr {
     font-size: 13px;
     font-weight: 400;
     text-transform: uppercase;
-    color: #222222;
+    color: $f1;
     margin-left: 10px;
   }
   &__price {
@@ -274,7 +274,7 @@ hr {
 
     font-weight: 700;
     text-transform: uppercase;
-    color: #f16d7f;
+    color: $pink;
   }
 
   &__card {
@@ -285,12 +285,12 @@ hr {
     margin: 0 auto;
     width: 212px;
     height: 48px;
-    background-color: #f16d7f;
+    background-color: $pink;
     font-family: Lato;
     font-size: 16px;
     font-weight: 700;
     letter-spacing: 0.025em;
-    color: #ffffff;
+    color: $bg;
     border: unset;
     display: flex;
     align-items: center;
@@ -311,9 +311,9 @@ hr {
 
 .sale {
   display: flex;
+  margin-bottom: 97px;
   &__art-block {
     position: relative;
-    // background-image: url(/img/winter.jpg);
   }
 
   &__offer {
@@ -327,6 +327,58 @@ hr {
     line-height: 1.2;
     font-weight: 700;
     letter-spacing: 0.025em;
-    color: #ffffff;
+    color: $bg;
+  }
+  &__primary {
+    display: block;
+  }
+  &__second {
+    display: block;
+    font-family: Lato;
+    font-size: 32.2px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: $bg;
+  }
+  &__h3 {
+    font-size: 20px;
+    grid-column: 2;
+    justify-items: center;
+  }
+
+  &__p {
+    font-family: Lato;
+    font-size: 14px;
+    grid-column: 2;
+    line-height: 24px;
+    color: #fbfbfb;
+  }
+  &__advantages {
+    color: #fbfbfb;
+    background-color: #222224;
+    padding: 40px 30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    align-items: center;
+  }
+  &__icon {
+    margin-right: 34px;
+    width: 47px;
+    grid-column: 1;
+  }
+
+  &__content {
+    margin-left: 33px;
+  }
+  &__text {
+    margin-left: 33px;
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 }
