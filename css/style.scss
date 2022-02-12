@@ -237,3 +237,96 @@ hr {
     grid-row: 2/3;
   }
 }
+
+.featured {
+  &__h2 {
+    font-family: Lato;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #222222;
+    text-align: center;
+  }
+  &__p {
+    text-align: center;
+    margin-top: 16px;
+
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #9f9f9f;
+  }
+  &__item {
+    margin-top: 19px;
+    margin-bottom: 17px;
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #222222;
+    margin-left: 10px;
+  }
+  &__price {
+    font-family: Lato;
+    font-size: 16px;
+    margin-left: 10px;
+
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #f16d7f;
+  }
+
+  &__card {
+    margin-top: 60px;
+    margin-right: 5px;
+  }
+  &__browse {
+    margin: 0 auto;
+    width: 212px;
+    height: 48px;
+    background-color: #f16d7f;
+    font-family: Lato;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+    border: unset;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .fa {
+      margin-top: 1px;
+      margin-left: 9px;
+    }
+    margin-bottom: 113px;
+  }
+  &__flex {
+    margin-bottom: 79px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.sale {
+  display: flex;
+  &__art-block {
+    position: relative;
+    // background-image: url(/img/winter.jpg);
+  }
+
+  &__offer {
+    margin-left: 36px;
+    margin-top: 146px;
+    top: 0;
+    position: absolute;
+
+    font-family: Lato;
+    font-size: 53.7px;
+    line-height: 1.2;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+  }
+}
