@@ -412,9 +412,12 @@ hr {
     padding-top: 10px;
     font-family: Lato;
     font-size: 16px;
-    width: 45%;
+    width: 70%;
     letter-spacing: 0.025em;
     color: #222224;
+  }
+  &__container {
+    width: 50%;
   }
 
   &__citate {
@@ -454,7 +457,7 @@ hr {
   &__flex {
     display: flex;
     align-items: center;
-    justify-content: center;
+    // justify-content: flex-start;
     z-index: 2;
     height: 100%;
   }
@@ -468,10 +471,162 @@ hr {
     margin-top: 41px;
     margin-left: 111px;
   }
+
+  &__legend {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 400;
+    color: #222224;
+    font-family: Lato;
+    margin-bottom: 35px;
+  }
+
+  &__input {
+    width: 334px;
+    height: 46px;
+    background-color: #e1e1e1;
+    border-radius: 23px 0px 0px 23px;
+    border: 1px solid #e1e1e1;
+    padding-left: 28px;
+    box-sizing: border-box;
+  }
+  &__send {
+    width: 104px;
+    height: 46px;
+    background-color: $pink;
+    border-radius: 0px 23px 23px 0px;
+    border: 1px solid $pink;
+    font-family: Lato;
+    font-size: 14px;
+
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #ffffff;
+  }
+  .legend {
+    &__primary {
+      font-size: 24px;
+
+      letter-spacing: 0.025em;
+    }
+    &__second {
+      margin-top: 10px;
+      display: block;
+
+      font-size: 14px;
+
+      text-transform: none;
+      letter-spacing: 0.025em;
+    }
+  }
 }
 
 .btn {
   &__active {
     background-color: $pink;
+  }
+}
+
+.footer {
+  .logo {
+    margin-bottom: 29px;
+    &__text {
+      align-self: center;
+    }
+  }
+  &__top {
+    display: flex;
+    margin-bottom: 89px;
+  }
+  &__left {
+    width: 45%;
+  }
+  &__right {
+    display: flex;
+    justify-content: space-around;
+    width: 65%;
+  }
+  &__about {
+    font-family: Lato;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 300;
+    letter-spacing: 0.025em;
+    color: #898989;
+  }
+  &__space {
+    margin-bottom: 20px;
+  }
+  &__h3 {
+    margin-bottom: 29px;
+    display: flex;
+    align-items: center;
+    height: 50px;
+    font-family: Lato;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 700;
+    letter-spacing: 0.025em;
+    color: #f16d7f;
+    text-transform: uppercase;
+    white-space: nowrap;
+  }
+  &__ol {
+    height: 185px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  &__li {
+    a {
+      text-decoration: none;
+      font-family: Lato;
+      font-size: 16px;
+      font-weight: 400;
+      letter-spacing: 0.025em;
+      color: #898989;
+    }
+  }
+  &__bottom {
+    background-color: #e6e6e6;
+  }
+  &__bottom-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__cite {
+    font-family: Lato;
+    font-size: 16px;
+
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #7a7a7a;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  .fa {
+    background-color: #ffffff;
+    margin-left: 8px;
+    text-align: center;
+    width: 32px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    transition: background 0.2s ease;
+    &:hover {
+      background-color: $pink;
+      color: $bg;
+    }
+    &:visited {
+      background-color: $gray;
+    }
+  }
+  &__href {
+    display: inline-block;
+    font-size: 16px;
+    line-height: 42px;
+    font-weight: 400;
+    letter-spacing: 0.025em;
+    color: #b2b2b2;
   }
 }

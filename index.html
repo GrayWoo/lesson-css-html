@@ -184,7 +184,7 @@
         <div class="subscribe__bg"></div>
 
         <div class="subscribe__flex container">
-          <div>
+          <div class="subscribe__container">
             <figure class="subscribe__figure">
               <img class="subscribe__avatar" src="/img/avatar.png" alt="avatar" />
               <div class="subscribe__text">
@@ -206,17 +206,86 @@
           </div>
           <form action="" class="subscribe__form">
             <fieldset>
-              <legend>Subscribe FOR OUR NEWLETTER AND PROMOTION</legend>
-              <input type="email" placeholder="Enter Your Email" />
-              <input type="button" value="Subscribe" />
+              <legend class="subscribe__legend">
+                <span class="legend__primary legend__text">Subscribe</span
+                ><span class="legend__second legend__text">FOR OUR NEWLETTER AND PROMOTION</span>
+              </legend>
+              <div class="subscribe__flex">
+                <input class="subscribe__input" type="email" placeholder="Enter Your Email" />
+                <input class="subscribe__send" type="button" value="Subscribe" />
+              </div>
             </fieldset>
           </form>
         </div>
       </div>
     </main>
 
-    <footer>
-      <div class="container"></div>
+    <footer class="footer">
+      <div class="footer__top container">
+        <div class="footer__left">
+          <div class="logo">
+            <img src="./img/logo.jpg" alt="logo" />
+            <span class="logo__text"> bran<span class="pink bold">d</span></span>
+          </div>
+          <div class="footer__about">
+            <p class="footer__space">
+              Objectively transition extensive data rather than cross functional solutions.
+              Monotonectally syndicate multidisciplinary materials before go forward benefits.
+              Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.
+            </p>
+            <p>
+              Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively
+              seize superior initiatives for wireless technologies. Dynamically optimize.
+            </p>
+          </div>
+        </div>
+
+        <nav class="footer__nav footer__right">
+          <div class="footer__link-block">
+            <h3 class="footer__h3">COMPANY</h3>
+            <ol class="footer__ol">
+              <li class="footer__li"><a href="#"> Home</a></li>
+              <li class="footer__li"><a href="#"> Shop</a></li>
+              <li class="footer__li"><a href="#"> About</a></li>
+              <li class="footer__li"><a href="#"> How It Works</a></li>
+              <li class="footer__li"><a href="#"> Contact</a></li>
+            </ol>
+          </div>
+          <div class="footer__link-block">
+            <h3 class="footer__h3">INFORMATION</h3>
+            <ol class="footer__ol">
+              <li class="footer__li"><a href="#"> Tearms & Condition</a></li>
+              <li class="footer__li"><a href="#"> Privacy Policy</a></li>
+              <li class="footer__li"><a href="#"> How to Buy</a></li>
+              <li class="footer__li"><a href="#"> How to Sell</a></li>
+              <li class="footer__li"><a href="#"> Promotion</a></li>
+            </ol>
+          </div>
+          <div class="footer__link-block">
+            <h3 class="footer__h3">SHOP CATEGORY</h3>
+            <ol class="footer__ol">
+              <li class="footer__li"><a href="#"> Men</a></li>
+              <li class="footer__li"><a href="#"> Women</a></li>
+              <li class="footer__li"><a href="#"> Child</a></li>
+              <li class="footer__li"><a href="#"> Apparel</a></li>
+              <li class="footer__li"><a href="#"> Browse All</a></li>
+            </ol>
+          </div>
+        </nav>
+      </div>
+
+      <div class="footer__bottom">
+        <div class="footer__bottom-content container">
+          <cite class="footer__cite"> &copy; 2017 Brand All Rights Reserved.</cite>
+          <div class="footer__hrefs">
+            <a href="#" class="footer__href"> <div class="fa fa-facebook"></div></a>
+            <a href="#" class="footer__href"> <div class="fa fa-twitter"></div></a>
+            <a href="#" class="footer__href"> <div class="fa fa-google-plus"></div></a>
+            <a href="#" class="footer__href"><div class="fa fa-google-plus"></div></a>
+            <a href="#" class="footer__href"><div class="fa fa-google-plus"></div></a>
+          </div>
+        </div>
+      </div>
     </footer>
   </body>
   <script src="/scripts/script.js"></script>
