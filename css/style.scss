@@ -15,17 +15,14 @@ body {
   font-family: Lato;
   background-color: $bg;
 }
-
 hr {
   margin: 0px;
   border-color: #ececec46;
 }
-
 .container {
   max-width: 1140px;
   margin: 0 auto;
 }
-
 .pink {
   color: $pink;
 }
@@ -149,6 +146,14 @@ hr {
 }
 
 .nav {
+  &__li {
+    position: relative;
+    &:hover {
+      .mega-box {
+        display: flex;
+      }
+    }
+  }
   &__list {
     display: flex;
     justify-content: space-around;
@@ -629,4 +634,92 @@ hr {
     letter-spacing: 0.025em;
     color: #b2b2b2;
   }
+}
+
+.mega-box {
+  background-color: #fff;
+  border: 1px solid #e8e8e8;
+  background-repeat: 5px;
+  padding: 20px;
+  position: absolute;
+  top: 47px;
+  z-index: 3;
+  display: none;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    position: absolute;
+    top: -8px;
+    left: 35px;
+    transform: rotate(45deg);
+    border-top: 1px solid #e8e8e8;
+    border-left: 1px solid #e8e8e8;
+  }
+}
+.mega-h3 {
+  font-family: Lato;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.025em;
+  color: #232323;
+  border-bottom: 1px solid #e8e8e8;
+  width: 235px;
+  padding-bottom: 10px;
+}
+
+.mega-link {
+  display: block;
+  text-decoration: none;
+  font-family: Lato;
+  font-size: 14px;
+  line-height: 28px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #646464;
+
+  &:hover {
+    color: $pink;
+  }
+}
+
+.mega-item {
+  margin-right: 45px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+}
+
+.last {
+  &:hover .mega-box {
+    right: 0;
+    left: auto;
+  }
+  .mega-box {
+    &::before {
+      left: auto;
+      right: 53px;
+    }
+  }
+}
+
+.middle {
+  .mega-box {
+    left: -180px;
+    &::before {
+      left: 210px;
+    }
+  }
+}
+
+.mega-margin {
+  margin-top: 30px;
+}
+
+.mega-img {
+  margin-top: 22px;
 }
