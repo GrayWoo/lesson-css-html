@@ -24,9 +24,36 @@
             <!-- Search from -->
             <form class="header__form form" action="">
               <!-- Browse btn -->
-              <button class="form__btn browse">
+              <button class="form__btn browse" id="browse-btn">
                 Browse<span class="fa fa-caret-down gray arrow"></span>
               </button>
+
+              <div class="mega-box" id="browse-menu">
+                <div class="mega-item">
+                  <div class="mega-item margin-right-null">
+                    <h3 class="mega-h3">Women</h3>
+                    <a class="mega-link" href="#">Dresses</a>
+                    <a class="mega-link" href="#">Tops</a>
+                    <a class="mega-link" href="#">Sweaters/Knits</a>
+                    <a class="mega-link" href="#">Jackets/Coats</a>
+                    <a class="mega-link" href="#">Blazers</a>
+                    <a class="mega-link" href="#">Denim</a>
+                    <a class="mega-link" href="#">Leggings/Pants</a>
+                    <a class="mega-link" href="#">Skirts/Shorts</a>
+                    <a class="mega-link" href="#">Accessories</a>
+                  </div>
+
+                  <div class="mega-item mega-margin margin-right-null">
+                    <h3 class="mega-h3">Men</h3>
+                    <a class="mega-link" href="#">Tees/Tank tops</a>
+                    <a class="mega-link" href="#">Shirts/Polos</a>
+                    <a class="mega-link" href="#">Sweaters</a>
+                    <a class="mega-link" href="#">Sweatshirts/Hoodies</a>
+                    <a class="mega-link" href="#">Blazers</a>
+                    <a class="mega-link" href="#">Jackets/vests</a>
+                  </div>
+                </div>
+              </div>
               <!-- Search input -->
               <input class="header__input" type="text" placeholder="Search for Item..." />
               <!-- Search button -->
@@ -40,9 +67,53 @@
         <!-- Right side -->
         <div class="header__right">
           <div class="header__block">
-            <button class="btn__cart">
+            <button class="btn__cart" id="cart-btn">
               <img src="./img/cart.png" alt="cart" />
             </button>
+            <div class="cart-menu" id="cart-menu-id">
+              <div class="cart-menu__product">
+                <img src="/img/product1.jpg" alt="" class="cart-menu__img" />
+                <div class="cart-menu__info">
+                  <span class="cart-menu__name">Rebox Zane</span>
+                  <span class="cart-menu__stars">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star-half-o"></span>
+                  </span>
+                  <span class="cart-menu__price"> 1 x $250</span>
+                </div>
+                <button class="cart-menu__btn">
+                  <div class="fa fa-times-circle"></div>
+                </button>
+              </div>
+              <div class="cart-menu__product">
+                <img src="/img/product2.jpg" alt="" class="cart-menu__img" />
+                <div class="cart-menu__info">
+                  <span class="cart-menu__name">Rebox Zane</span>
+                  <span class="cart-menu__stars">
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star"></span>
+                    <span class="fa fa-star-half-o"></span>
+                  </span>
+                  <span class="cart-menu__price"> 1 x $250</span>
+                </div>
+                <button class="cart-menu__btn">
+                  <div class="fa fa-times-circle"></div>
+                </button>
+              </div>
+              <div class="cart-menu__total">
+                <span class="cart-menu__total-text">TOTAL</span>
+                <span class="cart-menu__total-price">$500.00</span>
+              </div>
+              <div class="cart-menu__btn-block">
+                <button class="cart-menu__checkout cart-menu__btn-primary">Checkout</button>
+                <button class="cart-menu__buy cart-menu__btn-primary">Go to cart</button>
+              </div>
+            </div>
             <button class="btn__account">
               My&nbsp;Account<span class="fa fa-caret-down arrow"></span>
             </button>
@@ -60,7 +131,7 @@
               <a class="nav__link">home</a>
               <div class="mega-box">
                 <div class="mega-item">
-                  <h3 class="mega-h3">Man</h3>
+                  <h3 class="mega-h3">Men</h3>
                   <a class="mega-link" href="#">Dresses</a>
                   <a class="mega-link" href="#">Tops</a>
                   <a class="mega-link" href="#">Sweaters/Knits</a>
@@ -73,7 +144,7 @@
                 </div>
                 <div>
                   <div class="mega-item">
-                    <h3 class="mega-h3">Man</h3>
+                    <h3 class="mega-h3">Men</h3>
                     <a class="mega-link" href="#">Dresses</a>
                     <a class="mega-link" href="#">Tops</a>
                     <a class="mega-link" href="#">Sweaters/Knits</a>
@@ -81,14 +152,14 @@
                   </div>
 
                   <div class="mega-item mega-margin">
-                    <h3 class="mega-h3">Man</h3>
+                    <h3 class="mega-h3">Men</h3>
                     <a class="mega-link" href="#">Dresses</a>
                     <a class="mega-link" href="#">Tops</a>
                     <a class="mega-link" href="#">Sweaters/Knits</a>
                   </div>
                 </div>
                 <div class="mega-item">
-                  <h3 class="mega-h3">Man</h3>
+                  <h3 class="mega-h3">Men</h3>
                   <a class="mega-link" href="#">Dresses</a>
                   <a class="mega-link" href="#">Tops</a>
                   <a class="mega-link" href="#">Sweaters/Knits</a>
@@ -98,10 +169,10 @@
               </div>
             </li>
             <li class="nav__li">
-              <a class="nav__link">man</a>
+              <a class="nav__link">men</a>
               <div class="mega-box">
                 <div class="mega-item">
-                  <h3 class="mega-h3">Man</h3>
+                  <h3 class="mega-h3">Men</h3>
                   <a class="mega-link" href="#">Dresses</a>
                   <a class="mega-link" href="#">Tops</a>
                   <a class="mega-link" href="#">Sweaters/Knits</a>
@@ -114,7 +185,7 @@
                 </div>
                 <div>
                   <div class="mega-item">
-                    <h3 class="mega-h3">Man</h3>
+                    <h3 class="mega-h3">Men</h3>
                     <a class="mega-link" href="#">Dresses</a>
                     <a class="mega-link" href="#">Tops</a>
                     <a class="mega-link" href="#">Sweaters/Knits</a>
@@ -122,14 +193,14 @@
                   </div>
 
                   <div class="mega-item mega-margin">
-                    <h3 class="mega-h3">Man</h3>
+                    <h3 class="mega-h3">Men</h3>
                     <a class="mega-link" href="#">Dresses</a>
                     <a class="mega-link" href="#">Tops</a>
                     <a class="mega-link" href="#">Sweaters/Knits</a>
                   </div>
                 </div>
                 <div class="mega-item">
-                  <h3 class="mega-h3">Man</h3>
+                  <h3 class="mega-h3">Men</h3>
                   <a class="mega-link" href="#">Dresses</a>
                   <a class="mega-link" href="#">Tops</a>
                   <a class="mega-link" href="#">Sweaters/Knits</a>
@@ -142,7 +213,7 @@
               <a class="nav__link">women</a>
               <div class="mega-box">
                 <div class="mega-item">
-                  <h3 class="mega-h3">Man</h3>
+                  <h3 class="mega-h3">Men</h3>
                   <a class="mega-link" href="#">Dresses</a>
                   <a class="mega-link" href="#">Tops</a>
                   <a class="mega-link" href="#">Sweaters/Knits</a>
@@ -155,7 +226,7 @@
                 </div>
                 <div>
                   <div class="mega-item">
-                    <h3 class="mega-h3">Man</h3>
+                    <h3 class="mega-h3">Men</h3>
                     <a class="mega-link" href="#">Dresses</a>
                     <a class="mega-link" href="#">Tops</a>
                     <a class="mega-link" href="#">Sweaters/Knits</a>
@@ -163,14 +234,14 @@
                   </div>
 
                   <div class="mega-item mega-margin">
-                    <h3 class="mega-h3">Man</h3>
+                    <h3 class="mega-h3">Men</h3>
                     <a class="mega-link" href="#">Dresses</a>
                     <a class="mega-link" href="#">Tops</a>
                     <a class="mega-link" href="#">Sweaters/Knits</a>
                   </div>
                 </div>
                 <div class="mega-item">
-                  <h3 class="mega-h3">Man</h3>
+                  <h3 class="mega-h3">Men</h3>
                   <a class="mega-link" href="#">Dresses</a>
                   <a class="mega-link" href="#">Tops</a>
                   <a class="mega-link" href="#">Sweaters/Knits</a>
@@ -183,7 +254,7 @@
               <a class="nav__link">kids</a>
               <div class="mega-box">
                 <div class="mega-item">
-                  <h3 class="mega-h3">Man</h3>
+                  <h3 class="mega-h3">Men</h3>
                   <a class="mega-link" href="#">Dresses</a>
                   <a class="mega-link" href="#">Tops</a>
                   <a class="mega-link" href="#">Sweaters/Knits</a>
@@ -196,7 +267,7 @@
                 </div>
                 <div>
                   <div class="mega-item">
-                    <h3 class="mega-h3">Man</h3>
+                    <h3 class="mega-h3">Men</h3>
                     <a class="mega-link" href="#">Dresses</a>
                     <a class="mega-link" href="#">Tops</a>
                     <a class="mega-link" href="#">Sweaters/Knits</a>
@@ -204,14 +275,14 @@
                   </div>
 
                   <div class="mega-item mega-margin">
-                    <h3 class="mega-h3">Man</h3>
+                    <h3 class="mega-h3">Men</h3>
                     <a class="mega-link" href="#">Dresses</a>
                     <a class="mega-link" href="#">Tops</a>
                     <a class="mega-link" href="#">Sweaters/Knits</a>
                   </div>
                 </div>
                 <div class="mega-item">
-                  <h3 class="mega-h3">Man</h3>
+                  <h3 class="mega-h3">Men</h3>
                   <a class="mega-link" href="#">Dresses</a>
                   <a class="mega-link" href="#">Tops</a>
                   <a class="mega-link" href="#">Sweaters/Knits</a>
