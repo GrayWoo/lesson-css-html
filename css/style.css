@@ -170,7 +170,7 @@ hr {
 
 .brand {
   height: 665px;
-  background-image: url("/img/man.jpg");
+  background-image: url("../img/man.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -412,7 +412,7 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background-image: url("/img/subscribe.png");
+  background-image: url("../img/subscribe.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
