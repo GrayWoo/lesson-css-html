@@ -1,5 +1,3 @@
-/* Reset */
-@import url(/css/reset.css);
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300&family=Roboto+Mono:wght@200&display=swap");
 /* root */
 /* Global */
@@ -172,7 +170,7 @@ hr {
 
 .brand {
   height: 665px;
-  background-image: url(/img/man.jpg);
+  background-image: url("/img/man.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
