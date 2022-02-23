@@ -586,6 +586,9 @@ hr {
   letter-spacing: 0.025em;
   color: #898989;
 }
+.footer__li a:hover {
+  color: #f16d7f;
+}
 .footer__bottom {
   background-color: #e6e6e6;
 }

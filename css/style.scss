@@ -506,7 +506,6 @@ hr {
   &__flex {
     display: flex;
     align-items: center;
-    // justify-content: flex-start;
     z-index: 2;
     height: 100%;
   }
@@ -634,6 +633,9 @@ hr {
       font-weight: 400;
       letter-spacing: 0.025em;
       color: #898989;
+      &:hover {
+        color: #f16d7f;
+      }
     }
   }
   &__bottom {
