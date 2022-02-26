@@ -11,3 +11,6 @@ btn.addEventListener("click", () => menu.classList.toggle("mega-box_flex"));
 const cart = document.getElementById("cart-btn");
 const cartMenu = document.getElementById("cart-menu-id");
 cart.addEventListener("click", () => cartMenu.classList.toggle("show"));
+
+const cartBtn = document.getElementsByClassName("cart-menu__buy")[0];
+cartBtn.addEventListener("click", () => (document.location.href = "cart.html"));
