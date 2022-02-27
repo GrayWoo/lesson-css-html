@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Shopping-cart</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/font-awesome.min.css" />
     <link rel="stylesheet" href="css/product.css" />
-    <link rel="stylesheet" href="css/shopping.css" />
+    <link rel="stylesheet" href="css/checkout.css" />
   </head>
   <body>
     <header class="header">
@@ -438,93 +438,321 @@
       </div>
     </div>
 
-    <main>
-      <div class="product container">
-        <div class="product__header">
-          <span>Product Details</span>
-          <span>unite Price</span>
-          <span>Quantity</span>
-          <span>shipping</span>
-          <span>Subtotal</span>
-          <span>ACTION</span>
-        </div>
-        <div class="product__body">
-          <div class="product__container">
-            <div class="card">
-              <div class="flex">
-                <img src="img/pr1.png" alt="product" />
-                <div class="card__block">
-                  <div class="card__name">Mango People T-shirt</div>
-                  <div class="card__atr"><span class="bold">Color:</span> Red</div>
-                  <div class="card__atr"><span class="bold">Size:</span> Xll</div>
+    <div class="tabs container">
+      <ol class="tabs__list">
+        <li class="tabs__li">
+          <h2 class="tabs__h2">01.&nbsp Shipping Adress</h2>
+
+          <div class="tab hidden">
+            <div class="tab__left">
+              <h2 class="tab__h2 margin">Check as a guest or register</h2>
+              <p class="tab__text">Register with us for future convenience</p>
+              <form class="tab__form">
+                <div class="tab__element">
+                  <input class="tab__checkbox" type="radio" name="check" id="checkbox1" />
+                  <label for="checkbox1" class="tab__label">checkout as guest</label>
                 </div>
-              </div>
-              <span class="card__text">$150</span>
-              <input class="card__text card__input" type="text" value="2" />
-              <span class="card__text">free</span>
-              <span class="card__text">$300</span>
-              <button class="card__btn"><span class="fa fa-times-circle"></span></button>
+                <div class="tab__element">
+                  <input class="tab__checkbox" type="radio" name="register" id="checkbox2" />
+                  <label for="checkbox2" class="tab__label">register</label>
+                </div>
+              </form>
+              <h2 class="tab__h2 margin">register and save time!</h2>
+              <p class="tab__text">Register with us for future convenience</p>
+
+              <ul class="tab__second-list">
+                <li class="tab__second-li">
+                  <span class="fa fa-angle-double-right"></span>
+                  <span> Fast and easy checkoutt</span>
+                </li>
+                <li class="tab__second-li">
+                  <span class="fa fa-angle-double-right"></span>
+                  <span> Easy access to your order history</span>
+                  and status
+                </li>
+              </ul>
+              <button class="tab__btn hover">Continue</button>
             </div>
-            <div class="card">
-              <div class="flex">
-                <img src="img/pr2.png" alt="product" />
-                <div class="card__block">
-                  <div class="card__name">Mango People T-shirt</div>
-                  <div class="card__atr"><span class="bold">Color:</span> Red</div>
-                  <div class="card__atr"><span class="bold">Size:</span> Xll</div>
-                </div>
+
+            <div class="tab__right">
+              <form action="">
+                <h2 class="tab__h2 margin">Already registed?</h2>
+                <p class="tab__text">Please log in below</p>
+                <h3 class="tab__h3">EMAIL ADDRESS<span class="red"> *</span></h3>
+                <input type="text" class="tab__input" />
+                <h3 class="tab__h3">PASSWORD<span class="red"> *</span></h3>
+                <input type="text" class="tab__input" />
+                <div class="tab__alert red">* Required Fileds</div>
+              </form>
+              <div class="tab__btn-block">
+                <button class="tab__btn hover">Log in</button>
+                <span class="tab__pas">Forgot Password ?</span>
               </div>
-              <span class="card__text">$150</span>
-              <input class="card__text card__input" type="text" value="2" />
-              <span class="card__text">free</span>
-              <span class="card__text">$300</span>
-              <button class="card__btn"><span class="fa fa-times-circle"></span></button>
-            </div>
-            <div class="card">
-              <div class="flex">
-                <img src="img/pr3.png" alt="product" />
-                <div class="card__block">
-                  <div class="card__name">Mango People T-shirt</div>
-                  <div class="card__atr"><span class="bold">Color:</span> Red</div>
-                  <div class="card__atr"><span class="bold">Size:</span> Xll</div>
-                </div>
-              </div>
-              <span class="card__text">$150</span>
-              <input class="card__text card__input" type="text" value="2" />
-              <span class="card__text">free</span>
-              <span class="card__text">$300</span>
-              <button class="card__btn"><span class="fa fa-times-circle"></span></button>
             </div>
           </div>
-          <div class="btn-block">
-            <button class="cart-menu__buy cart-menu__btn-primary">cLEAR SHOPPING CART</button
-            ><button class="cart-menu__buy cart-menu__btn-primary">cONTINUE sHOPPING</button>
+        </li>
+
+        <li class="tabs__li">
+          <h2 class="tabs__h2">02.&nbsp BILLING INFORMATION</h2>
+
+          <div class="tab hidden">
+            <div class="tab__left">
+              <h2 class="tab__h2 margin">Check as a guest or register</h2>
+              <p class="tab__text">Register with us for future convenience</p>
+              <form class="tab__form">
+                <div class="tab__element">
+                  <input class="tab__checkbox" type="radio" name="check" id="checkbox1" />
+                  <label for="checkbox1" class="tab__label">checkout as guest</label>
+                </div>
+                <div class="tab__element">
+                  <input class="tab__checkbox" type="radio" name="register" id="checkbox2" />
+                  <label for="checkbox2" class="tab__label">register</label>
+                </div>
+              </form>
+              <h2 class="tab__h2 margin">register and save time!</h2>
+              <p class="tab__text">Register with us for future convenience</p>
+
+              <ul class="tab__second-list">
+                <li class="tab__second-li">
+                  <span class="fa fa-angle-double-right"></span>
+                  <span> Fast and easy checkoutt</span>
+                </li>
+                <li class="tab__second-li">
+                  <span class="fa fa-angle-double-right"></span>
+                  <span> Easy access to your order history</span>
+                  and status
+                </li>
+              </ul>
+              <button class="tab__btn hover">Continue</button>
+            </div>
+
+            <div class="tab__right">
+              <form action="">
+                <h2 class="tab__h2 margin">Already registed?</h2>
+                <p class="tab__text">Please log in below</p>
+                <h3 class="tab__h3">EMAIL ADDRESS<span class="red"> *</span></h3>
+                <input type="text" class="tab__input" />
+                <h3 class="tab__h3">PASSWORD<span class="red"> *</span></h3>
+                <input type="text" class="tab__input" />
+                <div class="tab__alert red">* Required Fileds</div>
+              </form>
+              <div class="tab__btn-block">
+                <button class="tab__btn hover">Log in</button>
+                <span class="tab__pas">Forgot Password ?</span>
+              </div>
+            </div>
           </div>
-        </div>
-      </div>
-      <div class="form-block container">
-        <form class="form" action="">
-          <h2 class="form__h3">Shipping Adress</h2>
-          <button class="form__sort">Bangladesh<span class="fa fa-caret-down arrow"></span></button>
-          <input type="text" placeholder="State" class="form__input" />
-          <input type="text" placeholder="Postcode / Zip" class="form__input" />
-          <input class="form__butn" type="button" value="get a quote" />
-        </form>
-        <div class="discount">
-          <h2 class="form__h3">coupon discount</h2>
-          <p class="discount__p">Enter your coupon code if you have one</p>
-          <input type="text" placeholder="State" class="form__input" />
-          <input class="form__butn" type="button" value="Apply coupon" />
-        </div>
-        <div class="checkout">
-          <div>
-            <p class="checkout__primary">Sub total <span class="price">$900</span></p>
-            <p class="checkout__second">GRAND TOTAL <span class="pink price">$900</span></p>
+        </li>
+
+        <li class="tabs__li">
+          <h2 class="tabs__h2">03.&nbsp SHIPPING INFORMATION</h2>
+
+          <div class="tab hidden">
+            <div class="tab__left">
+              <h2 class="tab__h2 margin">Check as a guest or register</h2>
+              <p class="tab__text">Register with us for future convenience</p>
+              <form class="tab__form">
+                <div class="tab__element">
+                  <input class="tab__checkbox" type="radio" name="check" id="checkbox1" />
+                  <label for="checkbox1" class="tab__label">checkout as guest</label>
+                </div>
+                <div class="tab__element">
+                  <input class="tab__checkbox" type="radio" name="register" id="checkbox2" />
+                  <label for="checkbox2" class="tab__label">register</label>
+                </div>
+              </form>
+              <h2 class="tab__h2 margin">register and save time!</h2>
+              <p class="tab__text">Register with us for future convenience</p>
+
+              <ul class="tab__second-list">
+                <li class="tab__second-li">
+                  <span class="fa fa-angle-double-right"></span>
+                  <span> Fast and easy checkoutt</span>
+                </li>
+                <li class="tab__second-li">
+                  <span class="fa fa-angle-double-right"></span>
+                  <span> Easy access to your order history</span>
+                  and status
+                </li>
+              </ul>
+              <button class="tab__btn hover">Continue</button>
+            </div>
+
+            <div class="tab__right">
+              <form action="">
+                <h2 class="tab__h2 margin">Already registed?</h2>
+                <p class="tab__text">Please log in below</p>
+                <h3 class="tab__h3">EMAIL ADDRESS<span class="red"> *</span></h3>
+                <input type="text" class="tab__input" />
+                <h3 class="tab__h3">PASSWORD<span class="red"> *</span></h3>
+                <input type="text" class="tab__input" />
+                <div class="tab__alert red">* Required Fileds</div>
+              </form>
+              <div class="tab__btn-block">
+                <button class="tab__btn hover">Log in</button>
+                <span class="tab__pas">Forgot Password ?</span>
+              </div>
+            </div>
           </div>
-          <button class="checkout__btn hover">proceed to checkout</button>
-        </div>
-      </div>
-    </main>
+        </li>
+
+        <li class="tabs__li">
+          <h2 class="tabs__h2">04.&nbsp SHIPPING METHOD</h2>
+
+          <div class="tab hidden">
+            <div class="tab__left">
+              <h2 class="tab__h2 margin">Check as a guest or register</h2>
+              <p class="tab__text">Register with us for future convenience</p>
+              <form class="tab__form">
+                <div class="tab__element">
+                  <input class="tab__checkbox" type="radio" name="check" id="checkbox1" />
+                  <label for="checkbox1" class="tab__label">checkout as guest</label>
+                </div>
+                <div class="tab__element">
+                  <input class="tab__checkbox" type="radio" name="register" id="checkbox2" />
+                  <label for="checkbox2" class="tab__label">register</label>
+                </div>
+              </form>
+              <h2 class="tab__h2 margin">register and save time!</h2>
+              <p class="tab__text">Register with us for future convenience</p>
+
+              <ul class="tab__second-list">
+                <li class="tab__second-li">
+                  <span class="fa fa-angle-double-right"></span>
+                  <span> Fast and easy checkoutt</span>
+                </li>
+                <li class="tab__second-li">
+                  <span class="fa fa-angle-double-right"></span>
+                  <span> Easy access to your order history</span>
+                  and status
+                </li>
+              </ul>
+              <button class="tab__btn hover">Continue</button>
+            </div>
+
+            <div class="tab__right">
+              <form action="">
+                <h2 class="tab__h2 margin">Already registed?</h2>
+                <p class="tab__text">Please log in below</p>
+                <h3 class="tab__h3">EMAIL ADDRESS<span class="red"> *</span></h3>
+                <input type="text" class="tab__input" />
+                <h3 class="tab__h3">PASSWORD<span class="red"> *</span></h3>
+                <input type="text" class="tab__input" />
+                <div class="tab__alert red">* Required Fileds</div>
+              </form>
+              <div class="tab__btn-block">
+                <button class="tab__btn hover">Log in</button>
+                <span class="tab__pas">Forgot Password ?</span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="tabs__li">
+          <h2 class="tabs__h2">05.&nbsp PAYMENT METHOD</h2>
+
+          <div class="tab hidden">
+            <div class="tab__left">
+              <h2 class="tab__h2 margin">Check as a guest or register</h2>
+              <p class="tab__text">Register with us for future convenience</p>
+              <form class="tab__form">
+                <div class="tab__element">
+                  <input class="tab__checkbox" type="radio" name="check" id="checkbox1" />
+                  <label for="checkbox1" class="tab__label">checkout as guest</label>
+                </div>
+                <div class="tab__element">
+                  <input class="tab__checkbox" type="radio" name="register" id="checkbox2" />
+                  <label for="checkbox2" class="tab__label">register</label>
+                </div>
+              </form>
+              <h2 class="tab__h2 margin">register and save time!</h2>
+              <p class="tab__text">Register with us for future convenience</p>
+
+              <ul class="tab__second-list">
+                <li class="tab__second-li">
+                  <span class="fa fa-angle-double-right"></span>
+                  <span> Fast and easy checkoutt</span>
+                </li>
+                <li class="tab__second-li">
+                  <span class="fa fa-angle-double-right"></span>
+                  <span> Easy access to your order history</span>
+                  and status
+                </li>
+              </ul>
+              <button class="tab__btn hover">Continue</button>
+            </div>
+
+            <div class="tab__right">
+              <form action="">
+                <h2 class="tab__h2 margin">Already registed?</h2>
+                <p class="tab__text">Please log in below</p>
+                <h3 class="tab__h3">EMAIL ADDRESS<span class="red"> *</span></h3>
+                <input type="text" class="tab__input" />
+                <h3 class="tab__h3">PASSWORD<span class="red"> *</span></h3>
+                <input type="text" class="tab__input" />
+                <div class="tab__alert red">* Required Fileds</div>
+              </form>
+              <div class="tab__btn-block">
+                <button class="tab__btn hover">Log in</button>
+                <span class="tab__pas">Forgot Password ?</span>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li class="tabs__li">
+          <h2 class="tabs__h2">06.&nbsp ORDER REVIEW</h2>
+
+          <div class="tab hidden">
+            <div class="tab__left">
+              <h2 class="tab__h2 margin">Check as a guest or register</h2>
+              <p class="tab__text">Register with us for future convenience</p>
+              <form class="tab__form">
+                <div class="tab__element">
+                  <input class="tab__checkbox" type="radio" name="check" id="checkbox1" />
+                  <label for="checkbox1" class="tab__label">checkout as guest</label>
+                </div>
+                <div class="tab__element">
+                  <input class="tab__checkbox" type="radio" name="register" id="checkbox2" />
+                  <label for="checkbox2" class="tab__label">register</label>
+                </div>
+              </form>
+              <h2 class="tab__h2 margin">register and save time!</h2>
+              <p class="tab__text">Register with us for future convenience</p>
+
+              <ul class="tab__second-list">
+                <li class="tab__second-li">
+                  <span class="fa fa-angle-double-right"></span>
+                  <span> Fast and easy checkoutt</span>
+                </li>
+                <li class="tab__second-li">
+                  <span class="fa fa-angle-double-right"></span>
+                  <span> Easy access to your order history</span>
+                  and status
+                </li>
+              </ul>
+              <button class="tab__btn hover">Continue</button>
+            </div>
+
+            <div class="tab__right">
+              <form action="">
+                <h2 class="tab__h2 margin">Already registed?</h2>
+                <p class="tab__text">Please log in below</p>
+                <h3 class="tab__h3">EMAIL ADDRESS<span class="red"> *</span></h3>
+                <input type="text" class="tab__input" />
+                <h3 class="tab__h3">PASSWORD<span class="red"> *</span></h3>
+                <input type="text" class="tab__input" />
+                <div class="tab__alert red">* Required Fileds</div>
+              </form>
+              <div class="tab__btn-block">
+                <button class="tab__btn hover">Log in</button>
+                <span class="tab__pas">Forgot Password ?</span>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
 
     <div class="subscribe">
       <div class="subscribe__bg"></div>
@@ -634,5 +862,5 @@
     </footer>
   </body>
   <script src="scripts/script.js"></script>
-  <script src="scripts/cart.js"></script>
+  <script src="scripts/accordion.js"></script>
 </html>
