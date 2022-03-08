@@ -117,16 +117,14 @@ hr {
     line-height: 32px;
     padding: 0px 11px;
     background-color: #cdcdcc;
-    background-image: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
     border: unset;
     font-weight: 300;
     letter-spacing: 0.025em;
     border: 1px solid #e6e6e6;
-    transition: color 0.2s ease;
+    transition: color 0.2s ease, background-color 0.2s ease, border 0.2s ease;
     &:hover {
-      transition: color 0.2s ease;
       color: white;
-      background-image: linear-gradient(180deg, $pink 0%, $pink 100%);
+      background-color: $pink;
       border-color: $pink;
       .fa {
         color: white;
@@ -144,6 +142,10 @@ hr {
     border: none;
     margin-right: 26px;
     margin-left: 10px;
+    transition: transform 0.2s ease;
+    &:hover {
+      transform: scale(110%);
+    }
   }
   &__account {
     min-width: 123px;
@@ -256,6 +258,10 @@ hr {
   }
 
   &__img {
+    transition: transform 0.2s ease;
+    &:hover {
+      transform: scale(102%);
+    }
     position: relative;
   }
   &__img1 {
@@ -340,6 +346,7 @@ hr {
     transition: 0.2s box-shadow ease;
     position: relative;
     cursor: pointer;
+
     &:hover {
       box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.15);
     }
@@ -524,6 +531,10 @@ hr {
     &:nth-child(1) {
       margin-left: 0px;
     }
+    transition: background-color 0.2s ease;
+    &:hover {
+      background-color: $pink;
+    }
   }
 
   &__flex {
@@ -589,12 +600,6 @@ hr {
       text-transform: none;
       letter-spacing: 0.025em;
     }
-  }
-}
-
-.btn {
-  &__active {
-    background-color: $pink;
   }
 }
 
@@ -820,7 +825,9 @@ hr {
     padding: 15px 0;
     border-bottom: 1px solid rgba(237, 237, 237, 0.74);
     display: flex;
-    // align-items: center;
+    img {
+      cursor: pointer;
+    }
   }
   &__info {
     width: 100%;
